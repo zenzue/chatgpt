@@ -2,7 +2,7 @@ import openai
 openai.api_key = "YOUR_API_KEY"
 
 def ask_gpt(question):
-    model_engine = "davinci" # You can try other engines as well
+    model_engine = "davinci" 
     response = openai.Completion.create(
       engine=model_engine,
       prompt=question,
